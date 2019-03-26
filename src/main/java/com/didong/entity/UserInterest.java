@@ -11,6 +11,7 @@ public class UserInterest {
 
     private Integer id;
 
+
     private String userId;
 
     private String optCode;
