@@ -8,22 +8,22 @@ import java.util.Date;
 
 /**
  * <p>
- * 用户关注表
+ * 视频评论表
  * </p>
  *
  * @author jobob
  * @since 2019-03-30
  */
 @Data
-@TableName("tb_vedio_report")
-public class TbVedioReport implements Serializable {
+@TableName("tb_video_comment")
+public class TbVideoComment implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     /**
      * 主键ID
      */
-    private Long rId;
+    private Long cId;
 
     /**
      * 视频ID
@@ -31,29 +31,34 @@ public class TbVedioReport implements Serializable {
     private Long vedioId;
 
     /**
-     * 用户ID
+     * 拍摄用户ID
      */
     private Long userId;
 
     /**
-     * 视频ID
+     * 评论内容
      */
-    private Long reportUserId;
+    private String commentContent;
 
     /**
-     * 举报原因
-     */
-    private String reportReason;
-
-    /**
-     * 点赞时间
+     * 评论时间
      */
     private Date createTime;
 
     /**
-     * 举报状态
+     * 删除标识
      */
-    private Boolean reportStatus;
+    private Boolean delFlag;
+
+    /**
+     * 删除时间
+     */
+    private Date delTime;
+
+    /**
+     * 评论用户ID
+     */
+    private Long commentUserId;
 
 
 }

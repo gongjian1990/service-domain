@@ -2,33 +2,32 @@ package com.didong.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
 
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
  * <p>
- * 视频分享表
+ * 个人消息表
  * </p>
  *
  * @author jobob
  * @since 2019-03-30
  */
 @Data
-@TableName("tb_vedio_share")
-public class TbVedioShare implements Serializable {
+@TableName("tb_personal_msg")
+public class TbPersonalMsg implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     /**
      * 主键ID
      */
-    private Long sId;
-
-    /**
-     * 视频ID
-     */
-    private Long vedioId;
+    private Long mId;
 
     /**
      * 用户ID
@@ -36,14 +35,14 @@ public class TbVedioShare implements Serializable {
     private Long userId;
 
     /**
-     * 分享人ID
+     * 消息内容
      */
-    private Long shareUserId;
+    private String msgContent;
 
     /**
-     * 分享平台
+     * 操作人员 
      */
-    private String sharePlatform;
+    private Long operater;
 
     /**
      * 点赞时间
