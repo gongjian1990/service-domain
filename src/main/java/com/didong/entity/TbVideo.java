@@ -79,6 +79,10 @@ public class TbVideo implements Serializable {
      * 标题
      */
     private String title;
+    /**
+     * 机器审核ID
+     */
+    private String taskId;
 
 
 }
