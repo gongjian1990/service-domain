@@ -61,14 +61,28 @@ public class TbChkVideo implements Serializable {
     private Date createTime;
 
     /**
-     * 创建时间
+     * 用户ID
      */
     private Long userId;
 
     /**
-     * 创建时间
+     * 上下架状态(0:待上架 1:下架 2:上架）
      */
     private Boolean vedioUpDownStatus;
+    /**
+     * 机器审核ID
+     */
+    private String taskId;
+
+    /**
+     * 人工审核状态
+     */
+    private String personChkStatus;
+    /**
+     * 最后更新时间
+     */
+    private Date lastUpdateTime;
+
 
 
 }
