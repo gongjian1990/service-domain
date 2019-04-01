@@ -38,7 +38,7 @@ public class TbVideo implements Serializable {
     /**
      * 视频描述
      */
-    private String vedionDesc;
+    private String videoDesc;
 
     /**
      * 精度

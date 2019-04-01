@@ -28,7 +28,7 @@ public class TbThumbsUp implements Serializable {
     /**
      * 视频ID
      */
-    private Long vedioId;
+    private Long videoId;
 
     /**
      * 拍摄用户ID

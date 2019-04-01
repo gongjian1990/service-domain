@@ -28,12 +28,12 @@ public class TbChkVideo implements Serializable {
     /**
      * 视频ID
      */
-    private Long vedioId;
+    private Long videoId;
 
     /**
-     * 机器审核状态 0:待审核；1：审核通过；2：审核不通过
+     * 机器审核状态 0:待审核；1：审核通过；2：审核不通过 3:未知
      */
-    private Boolean machineChkStatus;
+    private Integer machineChkStatus;
 
     /**
      * 机器审核时间
@@ -68,7 +68,7 @@ public class TbChkVideo implements Serializable {
     /**
      * 上下架状态(0:待上架 1:下架 2:上架）
      */
-    private Boolean vedioUpDownStatus;
+    private Integer vedioUpDownStatus;
     /**
      * 机器审核ID
      */
@@ -77,7 +77,7 @@ public class TbChkVideo implements Serializable {
     /**
      * 人工审核状态
      */
-    private String personChkStatus;
+    private Integer personChkStatus;
     /**
      * 最后更新时间
      */
