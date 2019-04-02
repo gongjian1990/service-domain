@@ -15,7 +15,7 @@ public class PhoneBook {
 
     private String contactName;
 
-    private String contact_phone;
+    private String contactPhone;
 
     private Integer delFlag;
 
