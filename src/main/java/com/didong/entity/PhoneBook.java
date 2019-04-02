@@ -11,11 +11,11 @@ public class PhoneBook {
 
     private Integer id;
 
-    private String userId;
+    private String udid;
 
-    private String optCode;
+    private String contactName;
 
-    private String optValue;
+    private String contact_phone;
 
     private Integer delFlag;
 
