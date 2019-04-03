@@ -14,12 +14,11 @@ public class UserInterest {
     @TableId(value = "id", type = IdType.AUTO)
     private long id;
 
-
     private String userId;
 
     private String optCode;
 
-    private String optVale;
+    private String optValue;
 
     private Integer delFlag;
 
