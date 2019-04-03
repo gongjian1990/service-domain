@@ -1,4 +1,4 @@
-package com.didong.entity;
+package com.didong.serviceEntity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

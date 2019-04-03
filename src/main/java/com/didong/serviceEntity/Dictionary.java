@@ -1,4 +1,4 @@
-package com.didong.entity;
+package com.didong.serviceEntity;
 
 import lombok.Data;
 
@@ -15,7 +15,7 @@ public class Dictionary {
 
     private String optCode;
 
-    private String optVale;
+    private String optValue;
 
     private String optDesc;
 

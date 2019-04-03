@@ -1,4 +1,4 @@
-package com.didong.entity;
+package com.didong.serviceEntity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -10,15 +10,15 @@ import java.util.Date;
 
 /**
  * <p>
- * 视频评论表
+ * 视频点赞表
  * </p>
  *
  * @author jobob
  * @since 2019-03-30
  */
 @Data
-@TableName("tb_video_comment")
-public class TbVideoComment implements Serializable {
+@TableName("tb_thumbs_up")
+public class TbThumbsUp implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -26,7 +26,7 @@ public class TbVideoComment implements Serializable {
      * 主键ID
      */
     @TableId(value = "id", type = IdType.AUTO)
-    private Long cId;
+    private Long tId;
 
     /**
      * 视频ID
@@ -39,12 +39,12 @@ public class TbVideoComment implements Serializable {
     private Long userId;
 
     /**
-     * 评论内容
+     * 点赞用户ID
      */
-    private String commentContent;
+    private Long thumbUpUserId;
 
     /**
-     * 评论时间
+     * 点赞时间
      */
     private Date createTime;
 
@@ -57,11 +57,6 @@ public class TbVideoComment implements Serializable {
      * 删除时间
      */
     private Date delTime;
-
-    /**
-     * 评论用户ID
-     */
-    private Long commentUserId;
 
 
 }
