@@ -22,36 +22,22 @@ public class TbVideoShare implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    /**
-     * 主键ID
-     */
+    /* 主键ID */
     @TableId(value = "id", type = IdType.AUTO)
-    private Long sId;
-
-    /**
-     * 视频ID
-     */
+    private long id;
+    /* 视频ID */
     private Long videoId;
-
-    /**
-     * 用户ID
-     */
+    /* 拍摄用户ID */
     private Long userId;
-
-    /**
-     * 分享人ID
-     */
+    /* 分享人ID */
     private Long shareUserId;
-
-    /**
-     * 分享平台
-     */
+    /* 分享平台 */
     private String sharePlatform;
-
-    /**
-     * 点赞时间
-     */
+    /* 分享平台 */
+    private String shareTime;
+    /* 创建时间 */
     private Date createTime;
-
+    /* 最后更新时间 */
+    private Date lastUpdateTime;
 
 }

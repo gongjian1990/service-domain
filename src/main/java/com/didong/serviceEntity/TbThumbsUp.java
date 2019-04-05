@@ -22,41 +22,21 @@ public class TbThumbsUp implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    /**
-     * 主键ID
-     */
+    /* 主键ID */
     @TableId(value = "id", type = IdType.AUTO)
-    private Long tId;
-
-    /**
-     * 视频ID
-     */
+    private long id;
+    /* 视频ID */
     private Long videoId;
-
-    /**
-     * 拍摄用户ID
-     */
+    /* 拍摄用户ID */
     private Long userId;
-
-    /**
-     * 点赞用户ID
-     */
+    /* 点赞用户ID */
     private Long thumbUpUserId;
-
-    /**
-     * 点赞时间
-     */
-    private Date createTime;
-
-    /**
-     * 删除标识
-     */
+    /* 删除标识 */
     private Boolean delFlag;
-
-    /**
-     * 删除时间
-     */
-    private Date delTime;
-
-
+    /* 点赞时间 */
+    private Date thumbUpTime;
+    /* 创建时间 */
+    private Date createTime;
+    /* 最后更新时间 */
+    private Date lastUpdateTime;
 }

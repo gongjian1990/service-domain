@@ -20,33 +20,20 @@ import java.util.Date;
 @TableName("tb_personal_msg")
 public class TbPersonalMsg implements Serializable {
 
-    private static final long serialVersionUID = 1L;
-
-    /**
-     * 主键ID
-     */
+    private static final long serialVersionUID = 2232995282002557936L;
+    /* 主键ID */
     @TableId(value = "id", type = IdType.AUTO)
-    private Long mId;
-
-    /**
-     * 用户ID
-     */
+    private Long id;
+    /* 用户ID */
     private Long userId;
 
-    /**
-     * 消息内容
-     */
+    /* 消息内容 */
     private String msgContent;
-
-    /**
-     * 操作人员 
-     */
+    /* 操作人员 */
     private Long operater;
-
-    /**
-     * 点赞时间
-     */
+    /* 创建时间 */
     private Date createTime;
-
+    /* 最后更新时间 */
+    private Date lastUpdateTime;
 
 }

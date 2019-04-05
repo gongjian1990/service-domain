@@ -21,68 +21,36 @@ import java.util.Date;
 public class TbVideo implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
-    /**
-     * 主键ID
-     */
+    /* 主键ID */
     @TableId(value = "id", type = IdType.AUTO)
+    private long id;
+    /* 视频ID */
     private Long videoId;
-
-    /**
-     * 用户ID
-     */
+    /* 用户ID */
     private Long userId;
-
-    /**
-     * 视频url
-     */
-    private String url;
-
-    /**
-     * 视频描述
-     */
+    /* 视频url */
+    private String videoUrl;
+    /* 标题 */
+    private String videoTitle;
+    /* 视频描述 */
     private String videoDesc;
-
-    /**
-     * 精度
-     */
+    /* 经度 */
     private Double longitude;
-
-    /**
-     * 纬度
-     */
+    /* 纬度 */
     private Double latitude;
-
-    /**
-     * 拍摄地点
-     */
+    /* 拍摄地点 */
     private String addressName;
-
-    /**
-     * 4帧图
-     */
+    /* 4帧图 */
     private String fourFps;
-
-    /**
-     * 1帧图
-     */
+    /* 1帧图 */
     private String oneFps;
-
-    /**
-     * 删除标识
-     */
+    /* 删除标识 */
     private Boolean delFlag;
-
-    /**
-     * 上传时间
-     */
+    /* 上传时间 */
     private Date uploadTime;
-
-    /**
-     * 标题
-     */
-    private String title;
-
-
+    /* 创建时间 */
+    private Date createTime;
+    /* 最后更新时间 */
+    private Date lastUpdateTime;
 
 }

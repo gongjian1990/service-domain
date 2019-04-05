@@ -22,70 +22,34 @@ public class TbChkVideo implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    /**
-     * 主键ID
-     */
+    /* 主键ID */
     @TableId(value = "id", type = IdType.AUTO)
-    private Long vId;
-
-    /**
-     * 视频ID
-     */
+    private long id;
+    /* 视频ID */
     private Long videoId;
-
-    /**
-     * 机器审核状态 0:待审核；1：审核通过；2：审核不通过 3:未知
-     */
-    private Integer machineChkStatus;
-
-    /**
-     * 机器审核时间
-     */
-    private Date machineChkTime;
-
-    /**
-     * 审核人员
-     */
-    private Long chkPerson;
-
-    /**
-     * 机器拒绝原因
-     */
-    private String machineRefuseReason;
-
-    /**
-     * 人工拒绝原因
-     */
-    private String personRefuseReason;
-
-    /**
-     * 创建时间
-     */
-    private Date createTime;
-
-    /**
-     * 用户ID
-     */
+    /* 用户ID */
     private Long userId;
-
-    /**
-     * 上下架状态(0:待上架 1:下架 2:上架）
-     */
-    private Integer vedioUpDownStatus;
-    /**
-     * 机器审核ID
-     */
-    private String taskId;
-
-    /**
-     * 人工审核状态
-     */
+    /* 机器审核状态 0:待审核；1：审核通过；2：审核不通过 3:未知 */
+    private Integer machineChkStatus;
+    /* 机器审核时间 */
+    private Date machineChkTime;
+    /* 机器拒绝原因 */
+    private String machineRefuseReason;
+    /* 审核人员 */
+    private Long chkPerson;
+    /* 人工审核状态（0待审核 1审核通过 2审核不通过）*/
     private Integer personChkStatus;
-    /**
-     * 最后更新时间
-     */
+    /* 人工拒绝原因 */
+    private String personRefuseReason;
+    /* 人工审核时间 */
+    private Date personChkTime;
+    /* 上下架状态(0:待上架 1:下架 2:上架）*/
+    private Integer vedioUpDownStatus;
+    /* 机器审核ID */
+    private String taskId;
+    /* 创建时间 */
+    private Date createTime;
+    /* 最后更新时间 */
     private Date lastUpdateTime;
-
-
 
 }

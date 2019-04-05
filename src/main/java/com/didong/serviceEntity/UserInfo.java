@@ -13,7 +13,7 @@ public class UserInfo {
 
 
     @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
+    private long id;
 
     private String userId;
 
