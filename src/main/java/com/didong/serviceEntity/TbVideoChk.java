@@ -44,7 +44,7 @@ public class TbVideoChk implements Serializable {
     /* 人工审核时间 */
     private Date personChkTime;
     /* 上下架状态(0:待上架 1:下架 2:上架）*/
-    private Integer vedioUpDownStatus;
+    private Integer videoUpDownStatus;
     /* 机器审核ID */
     private String taskId;
     /* 创建时间 */
