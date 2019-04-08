@@ -17,8 +17,8 @@ import java.util.Date;
  * @since 2019-03-30
  */
 @Data
-@TableName("tb_thumbs_up")
-public class TbThumbsUp implements Serializable {
+@TableName("tb_video_thumbs_up")
+public class TbVideoThumbsUp implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
