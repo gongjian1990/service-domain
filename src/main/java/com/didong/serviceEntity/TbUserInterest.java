@@ -8,8 +8,8 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-@TableName("user_interest")
-public class UserInterest {
+@TableName("tb_user_interest")
+public class TbUserInterest {
 
     @TableId(value = "id", type = IdType.AUTO)
     private long id;

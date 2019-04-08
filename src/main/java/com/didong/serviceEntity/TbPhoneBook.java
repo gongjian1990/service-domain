@@ -8,8 +8,8 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-@TableName("phone_book")
-public class PhoneBook {
+@TableName("tb_phone_book")
+public class TbPhoneBook {
 
     private static final long serialVersionUID = 811492177251026132L;
 

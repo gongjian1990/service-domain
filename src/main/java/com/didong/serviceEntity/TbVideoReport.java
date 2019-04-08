@@ -36,7 +36,7 @@ public class TbVideoReport implements Serializable {
     /* 举报时间 */
     private String reportTime;
     /* 举报状态 */
-    private Boolean reportStatus;
+    private Integer reportStatus;
     /* 创建时间 */
     private Date createTime;
     /* 最后更新时间 */

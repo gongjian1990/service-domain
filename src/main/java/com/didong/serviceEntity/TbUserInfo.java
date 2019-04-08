@@ -8,14 +8,14 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-@TableName("user_info")
-public class UserInfo {
+@TableName("tb_user_info")
+public class TbUserInfo {
 
 
     @TableId(value = "id", type = IdType.AUTO)
     private long id;
 
-    private String userId;
+    private Long userId;
 
     private Integer age;
 
@@ -57,6 +57,6 @@ public class UserInfo {
 
     private Integer gender;
 
-    private String unionid;
+    private String thirdUnionId;
 
 }
