@@ -52,5 +52,7 @@ public class TbVideo implements Serializable {
     private Date createTime;
     /* 最后更新时间 */
     private Date lastUpdateTime;
+    /*所有者：0：系统，1：用户*/
+    private Integer owner;
 
 }
