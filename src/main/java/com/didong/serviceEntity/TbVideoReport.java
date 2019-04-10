@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * <p>
- * 用户关注表
+ * 用户举报表
  * </p>
  *
  * @author jobob
