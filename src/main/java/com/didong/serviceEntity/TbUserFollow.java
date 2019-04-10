@@ -9,34 +9,23 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * <p>
- * 用户举报表
- * </p>
- *
- * @author jobob
- * @since 2019-03-30
+ * 用户关注表
  */
 @Data
 @TableName("tb_video_report")
-public class TbVideoReport implements Serializable {
+public class TbUserFollow implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     /* 主键ID */
     @TableId(value = "id", type = IdType.AUTO)
     private long id;
-    /* 视频ID */
-    private Long videoId;
-    /* 拍摄用户ID */
+    /* 用户ID */
     private Long userId;
-    /* 举报用户ID */
-    private Long reportUserId;
-    /* 举报原因 */
-    private String reportReason;
-    /* 举报时间 */
-    private String reportTime;
-    /* 举报状态 */
-    private Integer reportStatus;
+    /* 关注用户ID */
+    private Long followUserId;
+    /* 关注状态(0关注 1取消关注) */
+    private Integer followStatus;
     /* 创建时间 */
     private Date createTime;
     /* 最后更新时间 */

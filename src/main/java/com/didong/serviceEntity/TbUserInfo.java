@@ -7,6 +7,9 @@ import lombok.Data;
 
 import java.util.Date;
 
+/**
+ * 用户信息表
+ */
 @Data
 @TableName("tb_user_info")
 public class TbUserInfo {
