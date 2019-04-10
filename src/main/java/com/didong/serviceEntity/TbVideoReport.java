@@ -1,12 +1,10 @@
 package com.didong.serviceEntity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 /**
  * <p>
@@ -17,13 +15,11 @@ import java.util.Date;
  * @since 2019-03-30
  */
 @Data
-@TableName("tb_video_report")
 public class TbVideoReport implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     /* 主键ID */
-    @TableId(value = "id", type = IdType.AUTO)
     private long id;
     /* 视频ID */
     private Long videoId;
@@ -41,5 +37,8 @@ public class TbVideoReport implements Serializable {
     private Date createTime;
     /* 最后更新时间 */
     private Date lastUpdateTime;
-
+    /*举报图图片*/
+    private List videoReportPhoto;
+    /*举报类型*/
+    private Integer reportType;
 }
